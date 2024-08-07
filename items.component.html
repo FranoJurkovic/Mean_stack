@@ -1,0 +1,23 @@
+<!-- src/app/items/items.component.html -->
+
+<div class="container">
+  <h2 class="title">Korisnici</h2>
+  <div class="items-list">
+    <p *ngFor="let item of items" class="item">
+      {{ item.name }}: {{ item.description }}
+    </p>
+  </div>
+
+  <h3 class="form-title">Dodaj korisnika:</h3>
+  <form (ngSubmit)="addItem()" class="item-form" name="unos">
+    <label>
+      Ime:
+      <input [(ngModel)]="newItem.name" name="name" required class="input-field" autocomplete="off">
+    </label>
+    <label>
+      Država:
+      <input [(ngModel)]="newItem.description" name="description" required class="input-field" autocomplete="off">
+    </label>
+    <button type="submit" class="submit-button">Dodaj</button>
+  </form>
+</div>

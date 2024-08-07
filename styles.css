@@ -1,0 +1,74 @@
+/* src/app/items/items.component.css */
+
+/* Globalni stilovi */
+body {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, black, blue, yellow);
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilovi za kontejner */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Tamna pozadina sa malo providnosti */
+    border-radius: 10px;
+}
+
+/* Stilovi za naslove */
+.title {
+    font-size: 2.5rem; /* Veća veličina za naglašavanje */
+    font-weight: bold; /* Podebljan font */
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-size: 2rem; /* Veća veličina za naglašavanje */
+    font-weight: bold; /* Podebljan font */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Stilovi za listu korisnika */
+.items-list {
+    margin-bottom: 20px;
+}
+
+.item {
+    font-size: 1rem; /* Standardna veličina fonta za stavke */
+    margin-bottom: 10px;
+}
+
+/* Stilovi za formu */
+.item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
